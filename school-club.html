@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 Project | ICT Club</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Q2 PROJECT<span>.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="nickname-atlas.html">Nickname Atlas</a>
+                    <a class="nav-link" href="element-checker.html">Element Checker</a>
+                    <a class="nav-link" href="school-club.html">School Club</a>
+                    <a class="nav-link" href="meet-the-creator.html">Creator</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-banner">
+        <div class="container">
+            <p class="eyebrow">ICT 10 / PARTICIPATION ACTIVITY 2</p>
+            <h1>ICT Club <span>Directory.</span></h1>
+            <p>A directory of student members from different grade levels, organized using Python set operations.</p>
+        </div>
+    </header>
+
+    <main class="container club-main">
+        <section class="club-intro">
+            <div>
+                <p class="eyebrow">OUR COMMUNITY</p>
+                <h2>Different grades,<br><span>one ICT community.</span></h2>
+                <p>The directory combines the member sets from Grades 7 to 10. You can also add a member using the form below.</p>
+            </div>
+            <div class="club-stamp">
+                <span>ICT</span>
+                <small>CLUB<br>MEMBERS</small>
+            </div>
+        </section>
+
+        <section class="club-panel">
+            <div class="club-panel-heading">
+                <div>
+                    <p class="eyebrow">MEMBER DIRECTORY</p>
+                    <h2>Meet the members</h2>
+                </div>
+                <span class="directory-tag">GRADE 7–10</span>
+            </div>
+            <div id="results">
+                <p class="loading-message">Loading member directory...</p>
+            </div>
+        </section>
+
+        <section class="add-member-panel">
+            <div>
+                <p class="eyebrow">GROW THE COMMUNITY</p>
+                <h2>Add a new <span>member.</span></h2>
+                <p>Enter the student's first and last name. The program will add the name to the combined set.</p>
+            </div>
+            <div class="member-form">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="first-name" class="form-label">First name</label>
+                        <input type="text" id="first-name" class="form-control" placeholder="Enter first name">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="last-name" class="form-label">Last name</label>
+                        <input type="text" id="last-name" class="form-control" placeholder="Enter last name">
+                    </div>
+                </div>
+                <button type="button" id="add-button" class="btn btn-main mt-3">Add member →</button>
+                <p id="member-message" class="member-message" aria-live="polite"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>Q2 PROJECT · ICT 10</p>
+            <p>Created by Cassiopeia Rigodon</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="py" src="school-club.py"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 Project | Element Checker</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="element-page">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Q2 PROJECT<span>.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="nickname-atlas.html">Nickname Atlas</a>
+                    <a class="nav-link" href="element-checker.html">Element Checker</a>
+                    <a class="nav-link" href="school-club.html">School Club</a>
+                    <a class="nav-link" href="meet-the-creator.html">Creator</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="page-banner green-banner">
+        <div class="container">
+            <p class="eyebrow">ICT 10 / SKILLS TEST</p>
+            <h1>Non-Metal Elements <span>Search.</span></h1>
+            <p>Know your elements! Enter a chemical symbol to check whether it belongs to the non-metal elements listed in this activity.</p>
+        </div>
+    </header>
+    <main class="container element-main">
+        <div class="element-layout">
+            <div class="element-info">
+                <p class="eyebrow">HOW IT WORKS</p>
+                <h2>One symbol.<br><span>Useful information.</span></h2>
+                <p>Type a chemical symbol into the search box. The program will check the dictionary and display the element's name, atomic number, and atomic mass if it is included.</p>
+                <div class="mini-fact">
+                    <span class="fact-icon">01</span>
+                    <div>
+                        <strong>Enter a symbol</strong>
+                        <p>For example: H, O, or Ne.</p>
+                    </div>
+                </div>
+                <div class="mini-fact">
+                    <span class="fact-icon">02</span>
+                    <div>
+                        <strong>Search the dictionary</strong>
+                        <p>Python checks whether the symbol exists.</p>
+                    </div>
+                </div>
+                <div class="mini-fact">
+                    <span class="fact-icon">03</span>
+                    <div>
+                        <strong>View the result</strong>
+                        <p>The element's information will appear.</p>
+                    </div>
+                </div>
+            </div>
+            <section class="element-card">
+                <div class="element-card-top">
+                    <span class="element-label">ELEMENT LOOKUP</span>
+                    <span class="element-dot"></span>
+                </div>
+                <h2>Find an element</h2>
+                <p class="element-hint">Use the official chemical symbol.</p>
+                <label for="symbol" class="form-label">Element symbol</label>
+                <input type="text" id="symbol" class="form-control" placeholder="e.g. H, He, C, O" maxlength="2">
+                <button id="search-button" class="element-button">Search element →</button>
+                <div id="result" aria-live="polite">
+                    <p class="result-placeholder">Your search result will appear here.</p>
+                </div>
+                <p class="element-footnote">ICT 10 · PYTHON DICTIONARIES</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container footer-content">
+            <p>Q2 PROJECT · ICT 10</p>
+            <p>Created by Cassiopeia Rigodon</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="py" src="element-checker.py"></script>
+</body>
+</html>
