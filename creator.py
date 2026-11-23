@@ -21,7 +21,7 @@ dreams = [
     "To travel around the world",
     "To buy the things I couldn't afford as a minor",
     "To finally be free from school",
-    "To become the best version of myself, like the version of me in a parallel world called Best Versions"
+    "To become the best version of myself"
 ]
 
 document.getElementById("creator-content").innerHTML = f"""
