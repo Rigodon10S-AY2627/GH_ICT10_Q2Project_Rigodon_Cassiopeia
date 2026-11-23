@@ -1,6 +1,6 @@
 
 # PA2 - Working with Sets
-from pyscript import document, when
+from pyscript import document
 
 # Predefined Grade 7 members
 grade_7 = {"Victoria Rivera", "Reuben Lim", "Antonio Manalo"}
@@ -24,23 +24,22 @@ document.getElementById("results").innerHTML = (
 )
 
 # Add a new member
-@when("click", "#add-button")
 def add_member(e):
-    global ict_members
-
-    # Get the names entered by the user
     first_name = document.getElementById("first-name").value
     last_name = document.getElementById("last-name").value
 
-    # Format the new member's name
     full_name = f"{first_name.strip().title()} {last_name.strip().title()}"
 
-    # Add the new member using union
+    # Add the new member using set union
     new_member = {full_name}
-    ict_members = ict_members | new_member
+    ict_members.update(new_member)
 
     # Display the updated total and member list
     document.getElementById("results").innerHTML = (
         f"<h3>Total Members: {len(ict_members)}</h3>"
         f"<p>{', '.join(sorted(ict_members))}</p>"
     )
+
+    # Clear the input fields
+    document.getElementById("first-name").value = ""
+    document.getElementById("last-name").value = ""
