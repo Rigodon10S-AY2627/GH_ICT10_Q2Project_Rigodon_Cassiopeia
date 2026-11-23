@@ -1,6 +1,6 @@
 
 # PA2 - Working with Sets
-from pyscript import display, document
+from pyscript import document, when
 
 # Predefined Grade 7 members
 grade_7 = {"Victoria Rivera", "Reuben Lim", "Antonio Manalo"}
@@ -17,13 +17,11 @@ grade_10 = {"Lara Estrada", "Cassiopeia Rigodon", "Zangief Briones"}
 # Combine all grade sets using union
 ict_members = grade_7 | grade_8 | grade_9 | grade_10
 
-
 # Display the initial member count and list
 document.getElementById("results").innerHTML = (
     f"<h3>Total Members: {len(ict_members)}</h3>"
     f"<p>{', '.join(sorted(ict_members))}</p>"
 )
-
 
 # Add a new member
 @when("click", "#add-button")
