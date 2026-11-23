@@ -13,7 +13,6 @@ interests = [
 hobbies = [
     "Talking with friends",
     "Watching C-dramas, K-dramas, and J-dramas",
-    "Playing online games",
     "Scrolling through social media",
     "Participating in academic competitions"
 ]
